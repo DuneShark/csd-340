@@ -1,2 +1,4 @@
-# csd-340
-Web Development Class for Bellevue
+# CSD 340 Web Development with HTML and CSS
+## Contributors
+- John Woods
+- Tanner Glaser
