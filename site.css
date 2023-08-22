@@ -11,6 +11,7 @@ h1 {
     border-width: 1px;
     border-color: #D6A800;
     padding: 10px;
+    font-family: sans-serif, Arial, Helvetica;
 }
 
 h2 {
@@ -20,6 +21,7 @@ h2 {
     border-width: 1px;
     border-color: #D6A800;
     padding: 10px;
+    font-family: sans-serif, Arial, Helvetica;
 }
 
 h3 {
@@ -29,6 +31,7 @@ h3 {
     border-width: 1px;
     border-color: #D6A800;
     padding: 10px;
+    font-family: sans-serif, Arial, Helvetica;
 }
 
 h4 {
@@ -38,17 +41,26 @@ h4 {
     border-width: 1px;
     border-color: #D6A800;
     padding: 10px;
+    font-family: sans-serif, Arial, Helvetica;
+
 }
 
 a:link {
     color: #56db1d;
     text-decoration: none;
+    font-family: sans-serif, Arial, Helvetica;
 }
 
 a:hover {
     color: #56db1d;
+    font-family: sans-serif, Arial, Helvetica;
 }
 
 a:visited {
     color: #2a6910;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+ul {
+    font-family: sans-serif, Arial, Helvetica;
 }
