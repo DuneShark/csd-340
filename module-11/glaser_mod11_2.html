@@ -1,0 +1,59 @@
+<!-- Tanner Glaser : Assignment 10.3 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta name="description" content="My Module 11 Assignment" >
+    <meta name="keywords" content="homework, assignment, html" >
+    <meta name="author" content="Tanner Glaser" >
+    <meta http-equiv="refresh" content="300" >
+
+    <script>
+
+        const list = [];
+
+        function additem() {
+            var input = document.getElementById("box").value;
+            list.push(input);
+            document.getElementById("box").value = "";
+        }
+
+        function deleteitem() {
+            list.pop();
+        }
+
+        function displayitems() {
+            document.getElementById("show").innerHTML = list;
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    </header>
+
+    <div id="functions">
+
+        <input type="text" id="box" value="">
+        <label for="box"></label>
+
+        <button type="button" onclick="additem()">Add</button>
+
+        <button type="button" onclick="deleteitem()">Delete Last Entry</button>
+
+        <button type="button" onclick="displayitems()">Display</button>
+    </div>
+
+    <hr>
+
+    <div id="example">
+        <p id="show"></p>
+    </div>
+
+</body>
+</html>
