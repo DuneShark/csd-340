@@ -1,0 +1,94 @@
+<!-- Tanner Glaser : Assignment 3.3 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link href="glaser_mod12_2.css" type="text/css" rel="stylesheet" >
+    <meta name="description" content="My Module 12 Assignment" >
+    <meta name="keywords" content="homework, assignment, html" >
+    <meta name="author" content="Tanner Glaser" >
+    <meta http-equiv="refresh" content="300" >
+
+
+
+</head>
+
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+
+        <div class="left" style="width: 45%; float: left;">
+
+            <h3>Top 10 Favorite Books</h3>
+
+            <button type="button" onclick="topToBottom()">Top to Bottom</button>
+
+            <button type="button" onclick="bottomToTop()">Bottom to Top</button>
+
+            <hr>
+
+            <ol id="bookList">
+                <li>Red Rising Trilogy</li>
+                <li>Eragon Trilogy</li>
+                <li>Bartimaeus Trilogy</li>
+                <li>Percy Jackson Series</li>
+                <li>Maze Runner</li>
+                <li>The Knife of Never Letting Go</li>
+                <li>Harry Potter Series</li>
+                <li>The Hunger Games Trilogy</li>
+                <li>World War Z</li>
+                <li>Warriors Series</li>
+            </ol>
+
+        </div>
+
+        <div class="right" style="width: 45%; margin-left: 50%;">
+
+            <h3>5 Things I've Learned Since the Course Started</h3>
+            <ul>
+                <li>How to create an HTML and CSS File</li>
+                <li>How to create a GitHub Pages Website</li>
+                <li>How to add backgrounds colors to a website</li>
+                <li>How to link a URL on a website</li>
+                <li>How to change font size</li>
+            </ul>
+        </div>
+
+        <div class="bottom" style="width: 100%; margin-top: 60%;">
+            <a href="../index.html">Back to Index Page</a>
+        </div>
+
+    </div>
+
+    <script>
+
+        function topToBottom() {
+            const listItem = document.querySelector("ol");
+            const listArray = Array.from(listItem.getElementsByTagName("li"));
+
+            listArray.sort(function (a, b) {
+                return a.textContent.localeCompare(b.textContent);
+            });
+
+            listArray.forEach(function (item) {
+                listItem.appendChild(item);
+            });
+        }
+
+        function bottomToTop() {
+            const listItem = document.querySelector("ol");
+            const listArray = Array.from(listItem.getElementsByTagName("li"));
+
+            listArray.sort(function (a, b) {
+                return b.textContent.localeCompare(a.textContent);
+            });
+
+            listArray.forEach(function (item) {
+                listItem.appendChild(item);
+            });
+        }
+
+    </script>
+
+</body>
